@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main{
+       width: 600px;
+       height: 1000px;
+       background-color: brown;
+       position: relative;
+       z-index: 0;
+    }
+    .one{
+        height: 200px;
+        width: 200px;
+        background-color: blueviolet;
+        position: absolute;
+        top: 50px;
+        left: 30px;
+        z-index: 9;
+        position: static;
+
+    }
+    .two{
+        height: 100px;
+        width: 100px;
+        background-color: aqua;
+        position: absolute;
+        top: 60px;
+        z-index: 6;
+    }
+</style>
+<body>
+    <div class="main">
+        <div class="one"></div>
+        <div class="two"></div>
+    </div>
+</body>
+</html>
